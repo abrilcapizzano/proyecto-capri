@@ -1,0 +1,141 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center; }
+  .card-container .card {
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s; }
+    .card-container .card:hover {
+      box-shadow: 2px 2px 2px 2px black; }
+    .card-container .card img {
+      width: 20rem; }
+    .card-container .card h5 {
+      font-weight: bold; }
+
+h3 {
+  text-align: center; }
+
+.home img {
+  width: 100%; }
+
+.div-buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  justify-content: center; }
+
+.container-fluid.navegador .logo {
+  width: 8rem; }
+
+header {
+  padding: 0 30px; }
+
+#navbarNav {
+  justify-content: end; }
+
+@media screen and (max-width: 768px) {
+  #navbarNav {
+    text-align: center;
+    font-size: larger; } }
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("../img/otros-destinos/nws-st-brazil-beach-buzios.jpg");
+  height: calc(100vh - 59px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .hero h2 {
+    font-weight: bold; }
+
+.unitem {
+  margin: 0px 10px; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px; }
+  @media (max-width: 768px) {
+    .hero {
+      align-items: center; } }
+
+.hero-text {
+  color: white;
+  text-align: center; }
+  .hero-text p {
+    font-size: 20px; }
+
+.container-promociones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .container-promociones .card.card-promociones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    width: 20rem;
+    margin: 2rem; }
+    .container-promociones .card.card-promociones:hover {
+      box-shadow: 2px 2px 2px 2px rgba(21, 255, 0, 0.396); }
+
+.container-padre-agencia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .container-padre-agencia .card-agencia {
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    background-image: url("../img/otros-destinos/agencia-viajes.jpg");
+    background-size: cover;
+    background-position: center; }
+
+.container-nosotros {
+  background-color: #5dde5d;
+  font-size: 20px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.838);
+  height: 22vh;
+  color: white; }
+  footer a {
+    color: black;
+    text-decoration: none; }
+  footer button {
+    justify-self: center;
+    width: 20vw;
+    height: 5vh;
+    background-color: white;
+    margin: 10px; }
+
+.container-nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-family: verdana;
+  font-size: 20px;
+  margin: 2vw;
+  align-items: center; }
+  .container-nosotros img {
+    width: 100%;
+    height: 60vh; }

@@ -1,0 +1,15 @@
+@import "./variables/variables";
+.container-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: $ancho;
+    font-family: $tipo-de-letra;
+    font-size: $size;
+margin: 2vw;
+align-items: $alinear-al-centro;
+    img{
+        width: $anchoimagen;
+        height: $alturaimagen;
+    }
+
+}

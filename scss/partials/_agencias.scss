@@ -1,0 +1,28 @@
+.container-padre-agencia{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+.card-agencia{
+width: 20rem;
+height: 20rem;
+text-align: center;
+background-image: url("../img/otros-destinos/agencia-viajes.jpg");
+background-size: cover;
+background-position: center;
+}
+@mixin sm {
+      .container-padre-agencia{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+      align-content: center;
+      .card-agencia{
+         width: 20rem;
+         height: 5rem;
+         text-align: center;
+         }
+      }
+}
+}

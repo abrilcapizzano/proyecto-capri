@@ -1,0 +1,26 @@
+@import "./variables/variables";
+@mixin xxs {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

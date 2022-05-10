@@ -1,0 +1,70 @@
+@import "../mixins";
+.home {
+  img {
+    width: 100%;
+  }
+
+}
+.div-buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.container-fluid.navegador {
+  .logo {
+    width: 8rem;
+  }
+}
+header {
+  padding: 0 30px;
+}
+
+#navbarNav {
+  justify-content: end;
+}
+@media screen and (max-width:768px) {
+  #navbarNav{
+ text-align: center;
+ font-size: larger;
+  }
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0.4, 0.4), rgba(0, 0, 0, 0.1)),
+    url("../img/otros-destinos/nws-st-brazil-beach-buzios.jpg");
+  height: calc(100vh - 59px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  h2{
+    font-weight: bold;
+  }
+}
+.unitem {
+  margin: 0px 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+  @include sm {
+    align-items: center;
+  }
+}
+.hero-text {
+  color: white;
+  text-align: center;
+  p {
+    font-size: 20px;
+  }
+}

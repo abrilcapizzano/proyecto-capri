@@ -1,0 +1,6 @@
+@import "../maps";
+
+.container-nosotros{
+    background-color: map-get($redes, color );
+    font-size: map-get($redes, fSize );
+}
