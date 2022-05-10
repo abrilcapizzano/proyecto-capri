@@ -18,7 +18,20 @@
       font-weight: bold; }
 
 h3 {
-  text-align: center; }
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 40px;
+  background-color: #005a9e; }
+
+h4 {
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 40px;
+  background-color: #930001; }
 
 .home img {
   width: 100%; }
