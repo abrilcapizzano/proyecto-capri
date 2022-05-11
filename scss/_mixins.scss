@@ -24,3 +24,17 @@
     @content;
   }
 }
+@mixin titulo-nosotros{
+  display: flex;
+  flex-direction: row;
+font-size: 50px;
+color: white;
+}
+@mixin parrafo {
+  font-size: 25px;
+  font-family: $letranosotros;
+  color: rgb(255, 255, 255);
+}
+@mixin cards{
+
+}

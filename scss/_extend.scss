@@ -1,11 +1,12 @@
 @import "./variables/variables";
 .container-nosotros{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-content: center;
-    margin: 20px;
+    margin: 40px;
     font-family: $tipo-de-letra;
 
 

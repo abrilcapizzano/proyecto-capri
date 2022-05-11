@@ -1,10 +1,12 @@
 footer {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction:column;
     align-items: center;
     justify-items: center;
     background-color: rgba(0, 0, 0, 0.838);
-    height: 25vh;
+    height: 20vh;
 color: white;
     a {
         color: black;
@@ -15,7 +17,6 @@ button{
     width: 20vw;
     height:  5vh;
     background-color:white;
-    margin: 10px;
 }
 @include sm{
 

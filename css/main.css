@@ -91,21 +91,6 @@ header {
   .hero-text p {
     font-size: 20px; }
 
-.container-promociones {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .container-promociones .card.card-promociones {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 1rem;
-    width: 20rem;
-    margin: 2rem; }
-    .container-promociones .card.card-promociones:hover {
-      box-shadow: 2px 2px 2px 2px rgba(21, 255, 0, 0.396); }
-
 .container-padre-agencia {
   display: flex;
   flex-direction: row;
@@ -121,51 +106,55 @@ header {
 
 .container-nosotros {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-content: center;
-  margin: 20px;
-  font-family: verdana; }
+  margin: 40px;
+  font-family: Verdana; }
 
 .container-nosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  background-color: #0088ff; }
+  background-color: #005a9e; }
   .container-nosotros article {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center; }
     .container-nosotros article img {
-      width: 100%;
-      height: 70vh; }
+      width: 50%;
+      height: auto; }
+      @media screen and (max-width: 768px) {
+        .container-nosotros article img {
+          width: 100%;
+          height: auto; } }
   .container-nosotros h2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-self: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 50px;
     color: white; }
+    @media screen and (max-width: 768px) {
+      .container-nosotros h2 {
+        font-size: 30px;
+        display: flex;
+        flex-direction: row; } }
   .container-nosotros p {
-    color: white;
-    font-size: 20px; }
-  @media (max-width: 768px) {
-    .container-nosotros {
-      text-align: center; } }
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    color: white; }
 
 footer {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.838);
-  height: 25vh;
+  height: 20vh;
   color: white; }
   footer a {
     color: black;
@@ -174,14 +163,14 @@ footer {
     justify-self: center;
     width: 20vw;
     height: 5vh;
-    background-color: white;
-    margin: 10px; }
+    background-color: white; }
 
 .container-nosotros {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-content: center;
-  margin: 20px;
-  font-family: verdana; }
+  margin: 40px;
+  font-family: Verdana; }
