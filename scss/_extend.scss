@@ -2,14 +2,11 @@
 .container-nosotros{
     display: flex;
     flex-direction: column;
-    width: $ancho;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 20px;
     font-family: $tipo-de-letra;
-    font-size: $size;
-margin: 2vw;
-align-items: $alinear-al-centro;
-    img{
-        width: $anchoimagen;
-        height: $alturaimagen;
-    }
+
 
 }
