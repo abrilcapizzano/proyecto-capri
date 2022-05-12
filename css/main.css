@@ -16,6 +16,10 @@
       width: 20rem; }
     .card-container .card h5 {
       font-weight: bold; }
+    .card-container .card p {
+      color: black;
+      font-weight: bold;
+      background-color: rgba(128, 128, 128, 0.281); }
 
 h3 {
   color: white;
