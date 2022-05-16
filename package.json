@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/abrilcapizzano/CAPRI.git"
   },
-  "author": "",
+  "author": "Abril Capizzano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abrilcapizzano/CAPRI/issues"
@@ -22,5 +22,11 @@
     "nodemon": "^2.0.16"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Sitío web para una agencia de viajes",
+  "keywords": [
+    "viajes",
+    "destinos",
+    "turismo",
+    "promociones"
+  ]
 }
