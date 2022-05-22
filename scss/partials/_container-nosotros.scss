@@ -5,7 +5,6 @@
 
 .container-nosotros {
     @extend .container-nosotros;
-    background-color: map-get($nosotros, color);
     font-size: map-get($nosotros, size);
 
     article {
@@ -22,9 +21,12 @@
             height: $alturaimagen;
 
             @media screen and (max-width:768px) {
-                width: 100%;
+                width: 20rem;
                 height: auto;
             }
+        }
+        @media screen and (max-width:768px) {
+            background-size: auto;
         }
     }
 

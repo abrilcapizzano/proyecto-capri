@@ -135,8 +135,11 @@ header {
     height: auto; }
     @media screen and (max-width: 768px) {
       .container-nosotros article img {
-        width: 100%;
+        width: 20rem;
         height: auto; } }
+  @media screen and (max-width: 768px) {
+    .container-nosotros article {
+      background-size: auto; } }
 
 .container-nosotros h2 {
   display: flex;
