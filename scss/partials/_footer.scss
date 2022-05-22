@@ -14,11 +14,20 @@ color: white;
     }
 button{
     justify-self: center;
-    width: 20vw;
+    flex-direction: row;
+    width: 25vw;
     height:  5vh;
-    background-color:white;
+    background-color:rgb(125, 119, 119);
+    img{
+        width: 20px;
+    }
 }
 @include sm{
 
+}
+@media screen and (max-width:768px) {
+    flex-wrap: nowrap;
+object-fit: cover;
+height: 30vh;
 }
 }

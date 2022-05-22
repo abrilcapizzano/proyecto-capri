@@ -27,7 +27,7 @@ h3 {
   padding: 1rem;
   text-align: center;
   font-size: 40px;
-  background-color: #005a9e; }
+  background-color: #005a9eb1; }
 
 h4 {
   color: white;
@@ -35,7 +35,7 @@ h4 {
   padding: 1rem;
   text-align: center;
   font-size: 40px;
-  background-color: #930001; }
+  background-color: #ff9100a6; }
 
 .home img {
   width: 100%; }
@@ -94,6 +94,14 @@ header {
   text-align: center; }
   .hero-text p {
     font-size: 20px; }
+
+h3 {
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 40px;
+  background-color: #005a9eb1; }
 
 .container-padre-agencia {
   display: flex;
@@ -174,9 +182,17 @@ footer {
     text-decoration: none; }
   footer button {
     justify-self: center;
-    width: 20vw;
+    flex-direction: row;
+    width: 25vw;
     height: 5vh;
-    background-color: white; }
+    background-color: #7d7777; }
+    footer button img {
+      width: 20px; }
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-wrap: nowrap;
+      object-fit: cover;
+      height: 30vh; } }
 
 .container-nosotros {
   display: flex;
