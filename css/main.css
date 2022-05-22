@@ -123,7 +123,7 @@ h3 {
   justify-content: center;
   justify-items: center;
   align-content: center;
-  margin: 40px;
+  margin: 20px;
   font-family: Verdana;
   background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
   background-position: center;
@@ -132,6 +132,7 @@ h3 {
 
 .container-nosotros article {
   padding: 20px;
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -147,7 +148,10 @@ h3 {
         height: auto; } }
   @media screen and (max-width: 768px) {
     .container-nosotros article {
-      background-size: auto; } }
+      padding: 0%;
+      flex-direction: column;
+      flex-grow: 2;
+      background-size: 100%; } }
 
 .container-nosotros h2 {
   display: flex;
@@ -201,7 +205,7 @@ footer {
   justify-content: center;
   justify-items: center;
   align-content: center;
-  margin: 40px;
+  margin: 20px;
   font-family: Verdana;
   background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
   background-position: center;
