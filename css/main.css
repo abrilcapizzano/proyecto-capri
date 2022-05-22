@@ -146,12 +146,6 @@ h3 {
       .container-nosotros article img {
         width: 20rem;
         height: auto; } }
-  @media screen and (max-width: 768px) {
-    .container-nosotros article {
-      padding: 0%;
-      flex-direction: column;
-      flex-grow: 2;
-      background-size: 100%; } }
 
 .container-nosotros h2 {
   display: flex;
