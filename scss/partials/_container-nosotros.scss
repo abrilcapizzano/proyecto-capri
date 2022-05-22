@@ -3,38 +3,44 @@
 @import "../mixins";
 @import "../variables/variables";
 
-.container-nosotros{
+.container-nosotros {
     @extend .container-nosotros;
-    background-color: map-get($nosotros, color );
-    font-size: map-get($nosotros, size );
-article{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    img{
-        width: $anchoimagen;
-        height: $alturaimagen;
-        @media screen and (max-width:768px) {
-                width:100%;
-                height: auto ;
+    background-color: map-get($nosotros, color);
+    font-size: map-get($nosotros, size);
+
+    article {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            width: $anchoimagen;
+            height: $alturaimagen;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                height: auto;
+            }
         }
     }
-}
-h2{
- @include titulo-nosotros;
- @media screen and (max-width:768px) {
-     font-size: 30px;
-     display: flex;
-     flex-direction: row;
-     
- }
-}
-p{
-    @include parrafo;
-}
+
+    h2 {
+        @include titulo-nosotros;
+
+        @media screen and (max-width:768px) {
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+
+        }
+    }
+
+    p {
+        @include parrafo;
+    }
 
 }

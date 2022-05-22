@@ -27,12 +27,14 @@
 @mixin titulo-nosotros{
   display: flex;
   flex-direction: row;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 50px;
+font-weight: bolder;
 color: white;
 }
 @mixin parrafo {
-  font-size: 25px;
-  font-family: $letranosotros;
+  font-size: 35px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(255, 255, 255);
 }
 @mixin cards{

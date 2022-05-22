@@ -116,39 +116,45 @@ header {
   justify-items: center;
   align-content: center;
   margin: 40px;
-  font-family: Verdana; }
+  font-family: Verdana;
+  background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.container-nosotros {
-  background-color: #005a9e; }
-  .container-nosotros article {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center; }
-    .container-nosotros article img {
-      width: 50%;
-      height: auto; }
-      @media screen and (max-width: 768px) {
-        .container-nosotros article img {
-          width: 100%;
-          height: auto; } }
-  .container-nosotros h2 {
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    color: white; }
+.container-nosotros article {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  .container-nosotros article img {
+    width: 50%;
+    height: auto; }
     @media screen and (max-width: 768px) {
-      .container-nosotros h2 {
-        font-size: 30px;
-        display: flex;
-        flex-direction: row; } }
-  .container-nosotros p {
-    font-size: 25px;
-    font-family: Arial, sans-serif;
-    color: white; }
+      .container-nosotros article img {
+        width: 100%;
+        height: auto; } }
+
+.container-nosotros h2 {
+  display: flex;
+  flex-direction: row;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white; }
+  @media screen and (max-width: 768px) {
+    .container-nosotros h2 {
+      font-size: 30px;
+      display: flex;
+      flex-direction: row; } }
+
+.container-nosotros p {
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white; }
 
 footer {
   position: relative;
@@ -177,4 +183,8 @@ footer {
   justify-items: center;
   align-content: center;
   margin: 40px;
-  font-family: Verdana; }
+  font-family: Verdana;
+  background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
