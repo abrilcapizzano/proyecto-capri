@@ -1,10 +1,12 @@
 footer {
-    position: relative;
+    width: 100%;
+    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
     align-items: center;
     justify-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.838);
     height: 20vh;
 color: white;
@@ -26,8 +28,6 @@ button{
 
 }
 @media screen and (max-width:768px) {
-    flex-wrap: nowrap;
-object-fit: cover;
-height: 30vh;
+
 }
 }

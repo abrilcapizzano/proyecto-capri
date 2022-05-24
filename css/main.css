@@ -6,7 +6,7 @@
   .card-container .card {
     display: flex;
     text-align: center;
-    margin: 5px;
+    margin: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s; }
@@ -21,30 +21,15 @@
       font-weight: bold;
       background-color: rgba(128, 128, 128, 0.281); }
 
-h3 {
-  color: white;
-  margin: 2rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 40px;
-  background-color: #005a9eb1; }
-
 h4 {
-  color: white;
+  color: black;
   margin: 2rem;
   padding: 1rem;
   text-align: center;
-  font-size: 40px;
-  background-color: #ff9100a6; }
+  font-size: 40px; }
 
 .home img {
   width: 100%; }
-
-.div-buscador {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
 
 input {
   display: flex;
@@ -95,26 +80,44 @@ header {
   .hero-text p {
     font-size: 20px; }
 
+.buscador {
+  width: 25rem;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 h3 {
-  color: white;
+  color: black;
   margin: 2rem;
   padding: 1rem;
   text-align: center;
-  font-size: 40px;
-  background-color: #005a9eb1; }
+  font-size: 40px; }
 
 .container-padre-agencia {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly; }
+  @media screen and (max-width: 768px) {
+    .container-padre-agencia {
+      display: flex;
+      flex-direction: column; }
+      .container-padre-agencia .card-agencia {
+        margin-top: 12px;
+        margin-bottom: 12px; } }
   .container-padre-agencia .card-agencia {
-    width: 20rem;
-    height: 20rem;
-    text-align: center;
-    background-image: url("../img/otros-destinos/agencia-viajes.jpg");
-    background-size: cover;
-    background-position: center; }
+    width: 26rem;
+    height: 32rem; }
+    .container-padre-agencia .card-agencia .text {
+      padding: 24px; }
+    .container-padre-agencia .card-agencia p {
+      font-size: 18px; }
+      .container-padre-agencia .card-agencia p span {
+        font-weight: bold; }
+    .container-padre-agencia .card-agencia h5 {
+      margin: 12px;
+      font-size: 28px; }
 
 .container-nosotros {
   display: flex;
@@ -122,13 +125,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-content: center;
-  margin: 20px;
-  font-family: Verdana;
-  background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  align-content: center; }
 
 .container-nosotros article {
   padding: 20px;
@@ -136,42 +133,66 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-  .container-nosotros article img {
-    width: 50%;
-    height: auto; }
-    @media screen and (max-width: 768px) {
-      .container-nosotros article img {
-        width: 20rem;
-        height: auto; } }
+  justify-content: start; }
 
 .container-nosotros h2 {
+  margin-top: 64px;
   display: flex;
   flex-direction: row;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 50px;
-  font-weight: bolder;
-  color: white; }
+  font-size: 32px;
+  color: black;
+  font-weight: bold; }
   @media screen and (max-width: 768px) {
     .container-nosotros h2 {
-      font-size: 30px;
       display: flex;
-      flex-direction: row; } }
+      flex-direction: column;
+      text-align: center; } }
 
 .container-nosotros p {
-  font-size: 35px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: white; }
+  line-height: 40px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  font-size: 20px;
+  color: black; }
+  @media screen and (max-width: 768px) {
+    .container-nosotros p {
+      text-align: center;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px; } }
+
+.icons-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 150px; }
+  .icons-nosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .icons-nosotros article img {
+      align-self: center;
+      width: 120px; }
+    .icons-nosotros article p {
+      text-align: center;
+      font-weight: bold;
+      color: #FF3D00;
+      font-size: 20px;
+      padding: 5%; }
+  @media screen and (max-width: 768px) {
+    .icons-nosotros {
+      display: flex;
+      flex-direction: column; } }
 
 footer {
-  position: relative;
+  width: 100%;
+  margin-top: 200px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.838);
   height: 20vh;
   color: white; }
@@ -186,11 +207,6 @@ footer {
     background-color: #7d7777; }
     footer button img {
       width: 20px; }
-  @media screen and (max-width: 768px) {
-    footer {
-      flex-wrap: nowrap;
-      object-fit: cover;
-      height: 30vh; } }
 
 .container-nosotros {
   display: flex;
@@ -198,10 +214,4 @@ footer {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-content: center;
-  margin: 20px;
-  font-family: Verdana;
-  background-image: linear-gradient(rgba(86, 86, 86, 0.2), rgba(0, 0, 0, 0.1)), url(../img/destinos-ar/alex-wolowiecki-N3K40CpNir4-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  align-content: center; }

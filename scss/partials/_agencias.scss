@@ -1,28 +1,37 @@
-.container-padre-agencia{
+.container-padre-agencia {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-.card-agencia{
-width: 20rem;
-height: 20rem;
-text-align: center;
-background-image: url("../img/otros-destinos/agencia-viajes.jpg");
-background-size: cover;
-background-position: center;
-}
-@mixin sm {
-      .container-padre-agencia{
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-      align-content: center;
+   @media screen and (max-width:768px) {
+      display: flex;
+      flex-direction: column;
       .card-agencia{
-         width: 20rem;
-         height: 5rem;
-         text-align: center;
+         margin-top: 12px;
+         margin-bottom: 12px;
+      }
+   }
+
+   .card-agencia {
+      width: 26rem;
+      height: 32rem;
+
+      .text {
+         padding: 24px;
+      }
+
+      p {
+         font-size: 18px;
+
+         span {
+            font-weight: bold;
          }
       }
-}
+
+      h5 {
+         margin: 12px;
+         font-size: 28px;
+      }
+   }
+
 }

@@ -13,35 +13,37 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+        justify-content: start;
+ 
 
-        img {
-            width: $anchoimagen;
-            height: $alturaimagen;
-
-            @media screen and (max-width:768px) {
-                width: 20rem;
-                height: auto;
-            }
         }
-        
-    }
+
 
     h2 {
         @include titulo-nosotros;
 
         @media screen and (max-width:768px) {
-            font-size: 30px;
+
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            text-align: center;
+            
 
         }
     }
 
     p {
         @include parrafo;
+        @media screen and (max-width:768px) {
+      text-align: center;
+      flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+        }
     }
-   
+
+}
+.icons-nosotros{
+@include icons-nosotros;
+
 }

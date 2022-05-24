@@ -5,12 +5,7 @@
   }
 
 }
-.div-buscador {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
+
 input {
   display: flex;
   flex-direction: column;
@@ -67,4 +62,11 @@ header {
   p {
     font-size: 20px;
   }
+}
+.buscador{
+width: 25rem;
+background-color: blue;
+display: flex;
+flex-direction: row;
+align-items: center;
 }
