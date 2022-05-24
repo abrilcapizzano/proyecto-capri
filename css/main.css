@@ -41,9 +41,6 @@ input {
 .container-fluid.navegador .logo {
   width: 8rem; }
 
-header {
-  padding: 0 30px; }
-
 #navbarNav {
   justify-content: end; }
 
@@ -80,12 +77,16 @@ header {
   .hero-text p {
     font-size: 20px; }
 
-.buscador {
-  width: 25rem;
-  background-color: blue;
+.buscador .container-fluid {
+  margin-top: 30px;
+  width: 50px;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  justify-content: center; }
+
+.buscador input {
+  text-align: start;
+  width: 16rem; }
 
 h3 {
   color: black;
@@ -99,13 +100,6 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  @media screen and (max-width: 768px) {
-    .container-padre-agencia {
-      display: flex;
-      flex-direction: column; }
-      .container-padre-agencia .card-agencia {
-        margin-top: 12px;
-        margin-bottom: 12px; } }
   .container-padre-agencia .card-agencia {
     width: 26rem;
     height: 32rem; }
@@ -118,6 +112,15 @@ h3 {
     .container-padre-agencia .card-agencia h5 {
       margin: 12px;
       font-size: 28px; }
+
+@media screen and (max-width: 768px) {
+  .container-padre-agencia {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .container-padre-agencia .card-agencia {
+      width: 24rem;
+      margin: 16px; } }
 
 .container-nosotros {
   display: flex;

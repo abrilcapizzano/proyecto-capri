@@ -18,9 +18,7 @@ input {
     width: 8rem;
   }
 }
-header {
-  padding: 0 30px;
-}
+
 
 #navbarNav {
   justify-content: end;
@@ -64,9 +62,14 @@ header {
   }
 }
 .buscador{
-width: 25rem;
-background-color: blue;
+  .container-fluid{
+    margin-top: 30px;
+width: 50px;
 display: flex;
 flex-direction: row;
-align-items: center;
+justify-content: center;}
+input{
+  text-align:start;
+width: 16rem;
+}
 }
