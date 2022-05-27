@@ -1,5 +1,6 @@
 @import "../variables/variables";
 .card-container{
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,21 +17,27 @@
     img{
         width: 20rem;
     }
-    h5{
-        font-weight: bold;
-    }
 p{
     color: black;
     font-weight: bold;
-background-color: rgba(128, 128, 128, 0.281);
+background-color: rgba(128, 128, 128, 0.222);
 }
+}
+h3{
+    font-size: 24px;
 }
 }
 
-h4{
-        color: black;
-        margin: 2rem;
-        padding: 1rem;
-        text-align: center;
-        font-size: 40px;
+.destinos{
+    h1{display: none;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    h2{
+       font-size:  32px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    text-align: center;
 }

@@ -1,4 +1,5 @@
 .card-container {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -14,19 +15,23 @@
       box-shadow: 2px 2px 2px 2px black; }
     .card-container .card img {
       width: 20rem; }
-    .card-container .card h5 {
-      font-weight: bold; }
     .card-container .card p {
       color: black;
       font-weight: bold;
-      background-color: rgba(128, 128, 128, 0.281); }
+      background-color: rgba(128, 128, 128, 0.222); }
+  .card-container h3 {
+    font-size: 24px; }
 
-h4 {
-  color: black;
-  margin: 2rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 40px; }
+.destinos {
+  text-align: center; }
+  .destinos h1 {
+    display: none;
+    font-size: 45px;
+    font-weight: bold; }
+  .destinos h2 {
+    font-size: 32px; }
+  .destinos h3 {
+    font-size: 24px; }
 
 .home img {
   width: 100%; }
@@ -100,12 +105,23 @@ input {
       color: white;
       border: black;
       background-color: #FF3D00; }
-  .navbar.buscador h3 {
+  .navbar.buscador h4 {
     color: white;
     text-align: center; }
 
+main h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 32px; }
+
 @media screen and (max-width: 768px) {
   .navbar.buscador {
+    display: flex;
+    align-items: flex-start;
+    margin-inline: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
     height: 18rem; } }
 
 h3 {
@@ -115,6 +131,9 @@ h3 {
   text-align: center;
   font-size: 40px; }
 
+main h1 {
+  text-align: center; }
+
 .container-padre-agencia {
   display: flex;
   flex-direction: row;
@@ -122,25 +141,26 @@ h3 {
   justify-content: space-evenly; }
   .container-padre-agencia .card-agencia {
     width: 26rem;
-    height: 32rem; }
+    height: 32rem;
+    margin: 16px; }
     .container-padre-agencia .card-agencia .text {
       padding: 24px; }
     .container-padre-agencia .card-agencia p {
       font-size: 18px; }
       .container-padre-agencia .card-agencia p span {
         font-weight: bold; }
-    .container-padre-agencia .card-agencia h5 {
-      margin: 12px;
-      font-size: 28px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .container-padre-agencia {
     display: flex;
     flex-direction: column;
     align-content: center; }
     .container-padre-agencia .card-agencia {
-      width: 24rem;
-      margin: 16px; } }
+      width: 20rem;
+      margin: 10px; } }
+
+h1 {
+  text-align: center; }
 
 .container-nosotros {
   display: flex;
@@ -150,13 +170,33 @@ h3 {
   justify-items: center;
   align-content: center; }
 
+.main-nosotros h1 {
+  display: none; }
+
 .container-nosotros article {
-  padding: 20px;
-  margin: 20px;
+  line-height: 16px;
+  padding: 12px;
+  font-size: 24px;
+  color: black;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: start; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .container-nosotros article {
+      line-height: 24px; } }
+
+.container-nosotros p {
+  line-height: 16px;
+  padding: 12px;
+  font-size: 24px;
+  color: black; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .container-nosotros p {
+      line-height: 24px; } }
+
+.container-nosotros p {
+  line-height: 24px; }
 
 .container-nosotros h2 {
   margin-top: 64px;
@@ -170,19 +210,6 @@ h3 {
       display: flex;
       flex-direction: column;
       text-align: center; } }
-
-.container-nosotros p {
-  line-height: 40px;
-  margin-top: 32px;
-  margin-bottom: 64px;
-  font-size: 20px;
-  color: black; }
-  @media screen and (max-width: 768px) {
-    .container-nosotros p {
-      text-align: center;
-      flex-direction: column;
-      margin: 10px;
-      padding: 10px; } }
 
 .icons-nosotros {
   display: flex;
