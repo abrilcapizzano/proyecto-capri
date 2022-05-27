@@ -78,7 +78,7 @@ input {
     font-size: 20px; }
 
 .navbar.buscador {
-  background-color: lightgrey;
+  background-color: #4b4b4b;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ input {
       border: black;
       background-color: #FF3D00; }
   .navbar.buscador h3 {
-    color: black;
+    color: white;
     text-align: center; }
 
 @media screen and (max-width: 768px) {
@@ -208,97 +208,86 @@ h3 {
       flex-direction: column; } }
 
 footer {
-  width: 100%;
-  margin-top: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.838);
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: auto;
+  background-color: #4B4b4b;
   height: auto;
   color: white; }
   footer .redes {
-    margin: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
+    justify-content: space-evenly; }
     footer .redes button {
+      background: none;
       border: none;
-      flex-direction: column;
-      width: 5vw;
-      height: auto;
-      background-color: transparent; }
+      height: auto; }
       footer .redes button img {
-        width: 64px; }
-  footer p {
-    font-size: 24px; }
-  footer h6 {
-    font-size: 32px; }
-  footer .menu-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: start; }
-    footer .menu-footer ul {
-      color: white;
+        width: 32px; }
+    footer .redes ul {
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      footer .menu-footer ul li {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none; }
-        footer .menu-footer ul li a {
-          font-size: 20px;
-          text-decoration: none;
-          color: white; }
-    footer .menu-footer img {
-      width: 24vw; }
-  footer .newsletter {
-    width: 20rem;
-    height: 19rem;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      border: 0px; }
+
+p {
+  font-size: 20px; }
+
+h6 {
+  font-size: 24px; }
+
+.menu-footer {
+  margin: 16px; }
+  .menu-footer ul {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: white;
     display: flex;
     flex-direction: column; }
-    footer .newsletter .container.news {
-      padding: 20px;
-      background-color: transparent; }
-    footer .newsletter input[type=text],
-    footer .newsletter input[type=submit] {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      display: inline-block;
-      box-sizing: border-box; }
-    footer .newsletter input[type=submit] {
-      background-color: #FF3D00;
-      color: white;
-      border: none; }
-    footer .newsletter input[type=submit]:hover {
-      opacity: 0.8; }
-    footer .newsletter h6 {
-      font-size: 32px;
-      color: white; }
-    footer .newsletter p {
-      font-size: 16px;
-      color: white; }
+    .menu-footer ul li {
+      list-style: none; }
+      .menu-footer ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white; }
+  .menu-footer img {
+    width: 150px; }
 
-@media screen and (min-width: 200px) and (max-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 70rem; }
-    footer h6 {
-      font-size: 24px; }
-    footer .menu-footer ul li a {
-      font-size: 24px; }
-    footer .menu-footer img {
-      width: 64vw; }
-  .redes {
-    justify-content: center;
-    margin: 0px; } }
+.newsletter {
+  width: 20rem;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end; }
+  .newsletter ali .container.news {
+    padding: 20px;
+    background-color: transparent; }
+  .newsletter input[type=text] {
+    width: 100%;
+    height: 32px;
+    text-align: start; }
+  .newsletter input[type=submit] {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin: 8px 0;
+    box-sizing: border-box; }
+  .newsletter input[type=submit] {
+    background-color: #FF3D00;
+    color: white;
+    border: none;
+    text-align: center; }
+  .newsletter input[type=submit]:hover {
+    opacity: 0.8; }
+  .newsletter h6 {
+    font-size: 32px;
+    color: white; }
+  .newsletter p {
+    font-size: 20px;
+    color: white; }
 
 .container-nosotros {
   display: flex;
