@@ -38,15 +38,19 @@ footer {
     }
 
     .menu-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         margin: 16px;
         ul {
+            line-height: 12px;
             margin: 0px;
     padding: 0px;
     border: 0px;
-
             color: white;
             display: flex;
             flex-direction: column;
+        align-items: flex-start;
             li {
                 list-style: none;
 
@@ -68,7 +72,6 @@ footer {
         display: flex;
         flex-direction: column;
         justify-self: flex-end;
-        ali
 
         .container.news {
             padding: 20px;
@@ -113,3 +116,19 @@ footer {
 
 
 
+@media screen and (min-width:320px) and (max-width:768px) {
+    footer{display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,33%);
+    height: 100%;
+    .newsletter{
+        justify-self: center;
+    }
+    .redes{
+        justify-self: center;
+    }
+    .menu-footer{
+        justify-self: center;
+    }
+}
+}
