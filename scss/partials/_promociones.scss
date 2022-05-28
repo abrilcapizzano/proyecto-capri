@@ -12,7 +12,8 @@ main{
 .promociones-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly;}
+
     .card {
         border: 1px solid black;
         margin: 20px;
@@ -21,7 +22,7 @@ main{
         height: 300px;
         color: white;
         cursor: pointer;
-        transition: 1s ease-in-out;
+        transition: 1s;
         transform-style: preserve-3d;
 
         &:hover {
@@ -44,12 +45,12 @@ main{
             }
 
             &--back {
+
                 transform: rotateY(0.5turn);
             }
-            
         }
     }
-}
+
 .card-face--back{
     background-color:rgb(193, 191, 191);
     text-align: center;
