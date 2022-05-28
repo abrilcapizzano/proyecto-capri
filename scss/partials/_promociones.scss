@@ -22,8 +22,8 @@ main{
         height: 300px;
         color: white;
         cursor: pointer;
-        transition: 1s;
-        transform-style: preserve-3d;
+        transition: 2s;
+        transform-style: preserve-3d ;
 
         &:hover {
             transform: rotateY(0.5turn);
@@ -36,7 +36,7 @@ main{
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
-            transition: 1s ease-in-out;
+            transition: 1s;
 
             img {
                 width: 300px;
@@ -45,7 +45,6 @@ main{
             }
 
             &--back {
-
                 transform: rotateY(0.5turn);
             }
         }
@@ -63,5 +62,10 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+    }
+    .card{
+        &--back {
+            transform: rotateY(0.9turn);
+        }
     }
 }
