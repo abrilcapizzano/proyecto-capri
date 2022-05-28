@@ -1,4 +1,5 @@
 @import "../mixins";
+
 .home {
   img {
     width: 100%;
@@ -13,6 +14,7 @@ input {
   width: 100%;
   justify-content: center;
 }
+
 .container-fluid.navegador {
   .logo {
     width: 8rem;
@@ -23,12 +25,14 @@ input {
 #navbarNav {
   justify-content: end;
 }
+
 @media screen and (max-width:768px) {
-  #navbarNav{
- text-align: center;
- font-size: larger;
+  #navbarNav {
+    text-align: center;
+    font-size: larger;
   }
 }
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0.4, 0.4), rgba(0, 0, 0, 0.1)),
     url("../img/otros-destinos/nws-st-brazil-beach-buzios.jpg");
@@ -37,10 +41,12 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  h2{
+
+  h2 {
     font-weight: bold;
   }
 }
+
 .unitem {
   margin: 0px 10px;
 }
@@ -50,17 +56,21 @@ input {
   justify-content: center;
   align-items: flex-end;
   padding: 50px;
+
   @include sm {
     align-items: center;
   }
 }
+
 .hero-text {
   color: white;
   text-align: center;
+
   p {
     font-size: 20px;
   }
 }
+
 .navbar.buscador {
   background-color: #4b4b4b;
   text-align: center;
@@ -68,12 +78,17 @@ input {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  height:16rem;
-  margin: 20px;
-  margin-top: 4rem;
+  height: 12rem;
+  margin: 10px;
+
   .container-fluid.buscador {
     display: flex;
     flex-direction: column;
+
+    h5 {
+      color: white;
+      text-align: center;
+    }
   }
 
   .d-flex {
@@ -92,14 +107,12 @@ input {
     }
   }
 
-  h4 {
-    color:white;
-    text-align: center;
-  }
+
 
 }
-main{
-  h2{
+
+main {
+  h2 {
     text-align: center;
     font-size: 40px;
     margin-top: 32px;
@@ -107,13 +120,10 @@ main{
 }
 
 @media screen and (max-width:768px) {
-  .navbar.buscador{
+  .navbar.buscador {
     display: flex;
-align-items: flex-start;
-margin-inline: 0;
-margin-top: 0px;
-margin-bottom: 0px;
-    width: 100%;
-    height: 18rem;
+    align-items: flex-start;
+    height: 12rem;
+    margin: 10px;
   }
 }

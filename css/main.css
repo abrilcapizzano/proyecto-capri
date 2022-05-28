@@ -89,12 +89,14 @@ input {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  height: 16rem;
-  margin: 20px;
-  margin-top: 4rem; }
+  height: 12rem;
+  margin: 10px; }
   .navbar.buscador .container-fluid.buscador {
     display: flex;
     flex-direction: column; }
+    .navbar.buscador .container-fluid.buscador h5 {
+      color: white;
+      text-align: center; }
   .navbar.buscador .d-flex {
     justify-self: center; }
     .navbar.buscador .d-flex input {
@@ -105,9 +107,6 @@ input {
       color: white;
       border: black;
       background-color: #FF3D00; }
-  .navbar.buscador h4 {
-    color: white;
-    text-align: center; }
 
 main h2 {
   text-align: center;
@@ -118,11 +117,8 @@ main h2 {
   .navbar.buscador {
     display: flex;
     align-items: flex-start;
-    margin-inline: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-    height: 18rem; } }
+    height: 12rem;
+    margin: 10px; } }
 
 main h1 {
   text-align: center; }
@@ -133,7 +129,6 @@ main h1 {
   justify-content: space-evenly; }
 
 .p-card-promociones {
-  border: 1px solid black;
   margin: 16px;
   position: relative;
   width: 300px;
@@ -156,27 +151,34 @@ main h1 {
       width: 300px;
       height: 300px;
       object-fit: cover; }
-    .p-card-promociones .card-face .card-face--back {
-      background-color: #c1bfbf;
-      text-align: center;
-      color: black; }
     .p-card-promociones .card-face--back {
       transform: rotateY(0.5turn); }
 
 .card-face--back {
-  background-color: #c1bfbf;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.782);
   text-align: center;
   color: black; }
+  .card-face--back p {
+    font-style: italic;
+    background-color: rgba(211, 211, 211, 0.536); }
+  .card-face--back button {
+    align-self: center;
+    color: white;
+    background-color: #FF3D00; }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .promociones-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-content: center; }
   .p-card-promociones {
-    width: 300px;
-    height: 300px; } }
+    cursor: pointer;
+    transition: 2s;
+    transform-style: preserve-3d; }
+    .p-card-promociones:hover {
+      transform: rotateY(0.5turn); } }
 
 .container-padre-agencia {
   display: flex;

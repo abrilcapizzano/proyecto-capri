@@ -3,10 +3,12 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
+
    .card-agencia {
       width: 26rem;
       height: 32rem;
       margin: 16px;
+
       .text {
          padding: 24px;
       }
@@ -23,17 +25,20 @@
 
 
 }
-@media screen and (min-width:320px) and(max-width:768px)  {
-  .container-padre-agencia{
+
+@media screen and (min-width:320px) and(max-width:768px) {
+   .container-padre-agencia {
       display: flex;
-   flex-direction: column;
-   align-content: center;
-   .card-agencia{
-      width: 20rem;
-    margin: 10px;
+      flex-direction: column;
+      align-content: center;
+
+      .card-agencia {
+         width: 20rem;
+         margin: 10px;
+      }
    }
 }
-}
-h1{
+
+h1 {
    text-align: center;
 }

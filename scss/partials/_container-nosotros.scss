@@ -2,23 +2,27 @@
 @import "../extend";
 @import "../mixins";
 @import "../variables/variables";
-.main-nosotros{
-    h1{
+
+.main-nosotros {
+    h1 {
         display: none;
-}}
+    }
+}
 .container-nosotros {
-    article {@include parrafo;
+    article {
+        @include parrafo;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: start;
-        }
-p{
-    @include parrafo;
-}
-p{
-    line-height: 24px
-}
+    }
+    p {
+        @include parrafo;
+    }
+
+    p {
+        line-height: 24px
+    }
 
     h2 {
         @include titulo-nosotros;
@@ -28,14 +32,10 @@ p{
             display: flex;
             flex-direction: column;
             text-align: center;
-            
-
         }
     }
-
-
 }
-.icons-nosotros{
-@include icons-nosotros;
+.icons-nosotros {
+    @include icons-nosotros;
 
 }
