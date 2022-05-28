@@ -14,7 +14,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;}
 
-    .card {
+    .card-promociones {
         border: 1px solid black;
         margin: 20px;
         position: relative;
@@ -63,7 +63,7 @@ main{
         justify-content: center;
         align-content: center;
     }
-    .card{
+    .card-promociones{
         &--back {
             transform: rotateY(0.9turn);
         }

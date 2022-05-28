@@ -132,7 +132,7 @@ main h1 {
   flex-direction: row;
   justify-content: space-evenly; }
 
-.card {
+.card-promociones {
   border: 1px solid black;
   margin: 20px;
   position: relative;
@@ -142,9 +142,9 @@ main h1 {
   cursor: pointer;
   transition: 2s;
   transform-style: preserve-3d; }
-  .card:hover {
+  .card-promociones:hover {
     transform: rotateY(0.5turn); }
-  .card .card-face {
+  .card-promociones .card-face {
     position: absolute;
     top: 0;
     left: 0;
@@ -152,11 +152,11 @@ main h1 {
     height: 100%;
     backface-visibility: hidden;
     transition: 1s; }
-    .card .card-face img {
+    .card-promociones .card-face img {
       width: 300px;
       height: 300px;
       object-fit: cover; }
-    .card .card-face--back {
+    .card-promociones .card-face--back {
       transform: rotateY(0.5turn); }
 
 .card-face--back {
@@ -170,7 +170,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center; }
-  .card--back {
+  .card-promociones--back {
     transform: rotateY(0.9turn); } }
 
 .container-padre-agencia {
