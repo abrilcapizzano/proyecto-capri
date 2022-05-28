@@ -119,11 +119,10 @@ main {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width:768px) {
   .navbar.buscador {
     display: flex;
-    align-items: flex-start;
     height: 12rem;
-    margin: 10px;
+    width: 22rem;
   }
 }
