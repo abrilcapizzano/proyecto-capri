@@ -7,6 +7,7 @@
   .card-container .card {
     display: flex;
     text-align: center;
+    width: 20rem;
     margin: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -14,7 +15,7 @@
     .card-container .card:hover {
       box-shadow: 2px 2px 2px 2px black; }
     .card-container .card img {
-      width: 20rem; }
+      width: 100%; }
     .card-container .card p {
       color: black;
       font-weight: bold;
@@ -72,15 +73,14 @@ input {
   justify-content: center;
   align-items: flex-end;
   padding: 50px; }
-  @media (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     .hero {
       align-items: center; } }
-
-.hero-text {
-  color: white;
-  text-align: center; }
-  .hero-text p {
-    font-size: 20px; }
+  .hero .hero-text {
+    color: white;
+    text-align: center; }
+    .hero .hero-text p {
+      font-size: 20px; }
 
 .navbar.buscador {
   background-color: #4b4b4b;

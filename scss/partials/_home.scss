@@ -57,9 +57,9 @@ input {
   align-items: flex-end;
   padding: 50px;
 
-  @include sm {
+  @media screen and (min-width:320px) and (max-width:768px) {
     align-items: center;
-  }
+  
 }
 
 .hero-text {
@@ -69,7 +69,7 @@ input {
   p {
     font-size: 20px;
   }
-}
+}}
 
 .navbar.buscador {
   background-color: #4b4b4b;
