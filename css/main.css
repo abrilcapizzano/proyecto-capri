@@ -124,13 +124,6 @@ main h2 {
     width: 100%;
     height: 18rem; } }
 
-h3 {
-  color: black;
-  margin: 2rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 40px; }
-
 main h1 {
   text-align: center; }
 
@@ -139,6 +132,7 @@ main h1 {
   flex-direction: row;
   justify-content: space-evenly; }
   .promociones-container .card {
+    border: 1px solid black;
     margin: 20px;
     position: relative;
     width: 300px;
@@ -165,7 +159,7 @@ main h1 {
         transform: rotateY(0.5turn); }
 
 .card-face--back {
-  background-color: transparent;
+  background-color: #c1bfbf;
   text-align: center;
   color: black; }
 
